@@ -13,8 +13,9 @@ bool isPalindromeStack(std::string word) {
         if (i < mid) {          // Traverse halfway
             // Put character in stack - case insensitive
             s.push(tolower(word.at(i))); 
+
             if ((length % 2 != 0) && ((i + 1) == mid)) {
-                // If odd length, skip middle character
+                // If odd number string, skip middle character
                 i++;            
             }
         } else {
